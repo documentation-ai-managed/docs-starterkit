@@ -2,20 +2,20 @@
 title: Quickstart
 description: Minimal steps to customize this sample starter kit.
 ---
+
 ## Overview
 
-<Callout kind="alert" collapsed="false">
-  This site ships with placeholder content. Use this quickstart to replace it with your real product docs.
+<Callout kind="alert">
+This site ships with placeholder content. Use this quickstart to replace it with your real product docs.
 </Callout>
 
 ## 1. Update a page
 
 <Steps>
-  <Step title="Edit introduction" icon="edit" title-type="p">
+  <Step title="Edit introduction.mdx" icon="edit">
     Replace the sample introduction with a concise overview of your product and the key actions you want new users to take first.
   </Step>
-
-  <Step title="Preview your change" icon="monitor" title-type="p">
+  <Step title="Preview your change" icon="monitor">
     Use your usual preview workflow (local dev server or hosted editor) to confirm the updated introduction looks and reads as expected.
   </Step>
 </Steps>
@@ -23,21 +23,20 @@ description: Minimal steps to customize this sample starter kit.
 ## 2. Add a new page
 
 <Steps>
-  <Step title="Add a page" icon="file-text" title-type="p">
+  <Step title="Add a page" icon="file-text">
     Create a new `.mdx` file in this repository. For example:
 
-    ```mdx
-    ---
-    title: Your First Page
-    description: Replace this with your own summary.
-    ---
+```mdx
+---
+title: Your First Page
+description: Replace this with your own summary.
+---
 
-    ## Your First Page
-    Write the content you want users to read first.
-    ```
+## Your First Page
+Write the content you want users to read first.
+```
   </Step>
-
-  <Step title="Register in navigation" icon="settings" title-type="p">
+  <Step title="Register in navigation" icon="settings">
     Add a new page entry in `documentation.json` so your page appears in the sidebar and tab navigation.
   </Step>
 </Steps>
@@ -45,13 +44,9 @@ description: Minimal steps to customize this sample starter kit.
 ## Example onboarding flow (replace with yours)
 
 1. Sign up for an account and verify your email.
-
 2. Create your first workspace, project, or environment.
-
 3. Add one integration or data source to connect your existing tools.
-
 4. Complete a guided action (for example, run your first job or publish your first resource).
-
 5. Invite a teammate and assign a basic role or permission.
 
 ## 3. Connect API Reference (optional)
@@ -60,13 +55,11 @@ If you have an API, replace `openapi.yaml` with your real OpenAPI file. If you d
 
 ## Next steps
 
-<Columns cols="2">
-  <Card title="Core Concepts" href="/concepts" icon="layers" horizontal="false">
+<Columns cols={2}>
+  <Card title="Core Concepts" icon="layers" href="/concepts">
     Keep the mental model simple and easy to scan.
   </Card>
-
-  <Card title="Authentication" href="/authentication" icon="lock" horizontal="false">
+  <Card title="Authentication" icon="lock" href="/authentication">
     Add your real auth flows and security notes.
   </Card>
 </Columns>
-
