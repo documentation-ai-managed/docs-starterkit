@@ -3,10 +3,10 @@
   "initialRoute": "introduction",
   "colors": {
     "light": {
-      "brand": "#3B82F6"
+      "brand": "#F97316"
     },
     "dark": {
-      "brand": "#6ca1f8"
+      "brand": "#FDBA74"
     }
   },
   "navigation": {
@@ -25,11 +25,6 @@
                 "icon": "home"
               },
               {
-                "title": "Sample Notice",
-                "path": "sample-notice",
-                "icon": "alert-triangle"
-              },
-              {
                 "title": "Quickstart (Sample)",
                 "path": "quickstart",
                 "icon": "zap"
@@ -38,6 +33,48 @@
                 "title": "Components",
                 "path": "components",
                 "icon": "code"
+              }
+            ]
+          },
+          {
+            "group": "Components",
+            "icon": "layers",
+            "pages": [
+              {
+                "title": "Images",
+                "path": "components/images",
+                "icon": "image"
+              },
+              {
+                "title": "Cards",
+                "path": "components/cards",
+                "icon": "square"
+              },
+              {
+                "title": "Code",
+                "path": "components/code",
+                "icon": "code"
+              },
+              {
+                "title": "Steps",
+                "path": "components/steps",
+                "icon": "list-ordered"
+              },
+              {
+                "title": "Tabs",
+                "path": "components/tabs",
+                "icon": "columns"
+              }
+            ]
+          },
+          {
+            "group": "Sample Notice",
+            "icon": "alert-triangle",
+            "pages": [
+              {
+                "title": "Sample Notice",
+                "path": "sample-notice",
+                "icon": "alert-triangle"
               }
             ]
           },
