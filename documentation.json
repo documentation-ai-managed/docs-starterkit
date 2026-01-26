@@ -67,6 +67,11 @@
                 "icon": "code"
               },
               {
+                "title": "Callouts",
+                "path": "components/callouts",
+                "icon": "message-square"
+              },
+              {
                 "title": "Steps",
                 "path": "components/steps",
                 "icon": "list-ordered"
