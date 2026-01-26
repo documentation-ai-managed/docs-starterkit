@@ -2,7 +2,13 @@ openapi: '3.0.0'
 info:
   version: 1.0.0
   title: Sample API
-  description: Sample OpenAPI file included with the starter kit.
+  description: >
+    This is a sample OpenAPI file included with the starter kit.
+
+    Replace this entire file with your own OpenAPI specification that fully
+    describes your API, including your endpoints, schemas, authentication,
+    and error handling. Use this sample only as a structural reference, not
+    as a starting point for a production API definition.
   license:
     name: MIT
 servers:

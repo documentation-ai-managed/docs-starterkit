@@ -30,20 +30,14 @@
                 "icon": "zap"
               },
               {
-                "title": "Components",
-                "path": "components",
-                "icon": "code"
-              }
-            ]
-          },
-          {
-            "group": "Notice",
-            "icon": "alert-triangle",
-            "pages": [
-              {
                 "title": "Notice",
                 "path": "notice",
                 "icon": "alert-triangle"
+              },
+              {
+                "title": "Components",
+                "path": "components",
+                "icon": "code"
               }
             ]
           },
@@ -84,7 +78,7 @@
             ]
           },
           {
-            "group": "Example Guides",
+            "group": "Guides",
             "icon": "layers",
             "pages": [
               {
