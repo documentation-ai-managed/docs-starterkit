@@ -1,54 +1,33 @@
 ---
 title: Authentication (Sample)
-description: Placeholder layout you can replace with your real authentication guide.
+description: Sample guidance for authentication and OpenAPI usage.
 ---
 
 ## Overview
 
-<Callout kind="alert">
-This page is a sample layout. Replace every credential, header, and flow with your real authentication guidance.
-</Callout>
+This is sample content. Replace tokens, URLs, headers, and flows with your real authentication requirements.
 
-## Choose your auth model
+This API uses OpenAPI to describe endpoints, parameters, and responses. The reference is generated from `openapi.yaml`, so keep that file up to date as your API evolves.
 
-<Tabs>
-  <Tab title="Token" icon="key">
-    Use this tab if your product uses static tokens or API keys.
+## Authentication
 
-    <Steps>
-      <Step title="Create a token" icon="plus">
-        Explain where users generate or receive credentials.
-      </Step>
-      <Step title="Send the header" icon="code">
-        Show the simplest request that works.
-      </Step>
-    </Steps>
+Use a bearer token in the `Authorization` header for authenticated requests.
 
-    ```bash
-    curl https://api.yourcompany.com/v1/example \
-      -H "Authorization: Bearer YOUR_TOKEN"
-    ```
+```bash
+curl https://api.yourcompany.com/v1/example \
+  -H "Authorization: Bearer YOUR_TOKEN"
+```
 
-    <ParamField header="Authorization" param-type="string" required="true">
-      `Bearer YOUR_TOKEN`
-    </ParamField>
-  </Tab>
-  <Tab title="Session" icon="shield">
-    Use this tab if your product authenticates with a login session.
+<ParamField header="Authorization" param-type="string" required="true">
+  `Bearer YOUR_TOKEN`
+</ParamField>
 
-    <Steps>
-      <Step title="Sign in" icon="user">
-        Describe the login page or SSO flow.
-      </Step>
-      <Step title="Confirm access" icon="check-circle">
-        Explain how users verify they are authenticated.
-      </Step>
-    </Steps>
-  </Tab>
-</Tabs>
+## Using the API reference
 
-## Common mistakes (sample)
+Use the API reference to explore endpoints, required parameters, and example responses. If you update authentication headers or base URLs, also update `openapi.yaml` so the reference stays accurate.
+
+## Common mistakes
 
 <Expandable title="Why am I getting a 401?" default-open="false">
-Double-check that the token is valid, not expired, and sent in the correct header.
+Verify the token is valid, not expired, and sent in the `Authorization` header.
 </Expandable>

@@ -25,7 +25,7 @@
                 "icon": "home"
               },
               {
-                "title": "Quickstart (Sample)",
+                "title": "Quickstart",
                 "path": "quickstart",
                 "icon": "zap"
               },
@@ -89,12 +89,12 @@
             "icon": "layers",
             "pages": [
               {
-                "title": "Core Concepts (Sample)",
+                "title": "Core Concepts",
                 "path": "concepts",
                 "icon": "file-text"
               },
               {
-                "title": "Authentication (Sample)",
+                "title": "Authentication",
                 "path": "authentication",
                 "icon": "lock"
               }
@@ -107,6 +107,17 @@
         "icon": "code",
         "groups": [
           {
+            "group": "Overview",
+            "icon": "file-text",
+            "pages": [
+              {
+                "title": "Authentication",
+                "path": "authentication",
+                "icon": "lock"
+              }
+            ]
+          },
+          {
             "group": "Sample Endpoints",
             "openapi": "openapi.yaml"
           }
@@ -117,7 +128,7 @@
         "icon": "help-circle",
         "pages": [
           {
-            "title": "Help Center (Sample)",
+            "title": "Help Center",
             "path": "help-center",
             "icon": "home"
           },
