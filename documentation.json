@@ -30,11 +30,6 @@
                 "icon": "zap"
               },
               {
-                "title": "Notice",
-                "path": "notice",
-                "icon": "alert-triangle"
-              },
-              {
                 "title": "Components",
                 "path": "components",
                 "icon": "code"
@@ -74,17 +69,6 @@
                 "title": "Tabs",
                 "path": "components/tabs",
                 "icon": "columns"
-              }
-            ]
-          },
-          {
-            "group": "Guides",
-            "icon": "layers",
-            "pages": [
-              {
-                "title": "Core Concepts",
-                "path": "concepts",
-                "icon": "file-text"
               }
             ]
           }
