@@ -1,0 +1,117 @@
+---
+title: Introduction to StarterKit
+description: Get an overview of the StarterKit for Documentation.AI, its key features, and how it simplifies creating AI-powered documentation.
+---
+
+## What is StarterKit?
+
+StarterKit provides a complete foundation for building AI-powered documentation sites with Documentation.AI. You get pre-configured components, themes, and integrations that let you focus on content instead of setup. Deploy your docs in minutes and scale effortlessly as your project grows.
+
+<Callout kind="info">
+  StarterKit uses modern MDX and React components to create interactive, searchable documentation.
+</Callout>
+
+## Key Features
+
+StarterKit stands out with its powerful features designed for developers and teams.
+
+<Columns cols={3}>
+  <Card title="AI-Powered Generation" icon="zap" href="#ai-features">
+    Automatically generate docs from codebases, APIs, and markdown using Documentation.AI models.
+  </Card>
+  <Card title="Interactive Components" icon="components" href="#components">
+    Use rich MDX components like Steps, Tabs, and Cards for engaging user experiences.
+  </Card>
+  <Card title="SEO Optimized" icon="trending-up" href="#seo">
+    Built-in search, sitemaps, and fast rendering ensure your docs rank highly.
+  </Card>
+</Columns>
+
+## Quick Start
+
+Get up and running with StarterKit in under 5 minutes.
+
+<Steps>
+  <Step title="Clone and Install" icon="download">
+    Start by cloning the repository and installing dependencies.
+
+````bash
+git clone https://github.com/documentation-ai/starterkit.git
+cd starterkit
+npm install
+````
+  </Step>
+  <Step title="Configure AI Key" icon="settings">
+    Add your Documentation.AI API key to the environment.
+
+    Create a `.env.local` file:
+
+````javascript
+DOCUMENTATION_AI_API_KEY=your-api-key-here
+````
+  </Step>
+  <Step title="Run Development Server" icon="play">
+    Launch the dev server and open your browser.
+
+````bash
+npm run dev
+# Visit http://localhost:3000
+````
+  </Step>
+</Steps>
+
+## Multi-Language Support Example
+
+Showcase code in different languages effortlessly.
+
+<CodeGroup tabs="JavaScript,Python">
+  ```javascript
+  // Generate docs via API
+  const response = await fetch('https://api.example.com/v1/docs/generate', {
+    method: 'POST',
+    headers: { 'Authorization': `Bearer ${YOUR_API_KEY}` },
+    body: JSON.stringify({ codebase: 'path/to/repo' })
+  });
+  const docs = await response.json();
+  ```
+  ```python
+  # Generate docs via API
+  import requests
+  response = requests.post(
+      'https://api.example.com/v1/docs/generate',
+      headers={'Authorization': f'Bearer {YOUR_API_KEY}'},
+      json={'codebase': 'path/to/repo'}
+  )
+  docs = response.json()
+  ```
+</CodeGroup>
+
+## Why Choose Documentation.AI?
+
+<Expandable title="Key Benefits" default-open="true">
+  - **Speed**: Generate complete docs from your codebase in seconds.
+  - **Accuracy**: AI understands code context for precise documentation.
+  - **Customization**: Tailor themes and components to match your brand (use #3B82F6 for primary blue).
+  - **Scalability**: Handles large repos and teams without performance issues.
+</Expandable>
+
+## Next Steps
+
+<Columns cols={2}>
+  <Card title="Quickstart Guide" icon="book-open" href="/quickstart">
+    Dive into detailed setup instructions and first project.
+  </Card>
+  <Card title="Authentication" icon="lock" href="/authentication">
+    Secure your API keys and manage access.
+  </Card>
+  <Card title="Configuration" icon="settings" href="/configuration">
+    Customize themes, components, and AI settings.
+  </Card>
+  <Card title="Changelog" icon="git-branch" href="/changelog">
+    Track updates and new features.
+  </Card>
+</Columns>
+
+<Callout kind="tip">
+  Begin with the Quickstart Guide to build your first AI-generated docs page.
+</Callout>

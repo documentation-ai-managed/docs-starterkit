@@ -1,0 +1,29 @@
+---
+title: Install Error: Module Not Found
+description: Resolve module not found install error in StarterKit.
+---
+
+## Symptoms
+
+- Error: `Cannot find module '@documentation-ai/starterkit'`
+- Build fails after install
+
+## Causes
+
+- Incorrect package name
+- Missing `node_modules` folder
+
+## Solution
+
+<Steps>
+  <Step title="Check package name">
+    ````bash
+    npm install @documentation-ai/starterkit
+    ````
+  </Step>
+  <Step title="Reinstall dependencies">
+    ````bash
+    rm -rf node_modules && npm install
+    ````
+  </Step>
+</Steps>
