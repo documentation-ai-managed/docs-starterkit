@@ -1,161 +1,22 @@
 ---
-title: Changelog
-description: Track the latest updates, bug fixes, and new features in StarterKit releases.
+title: Sample Changelog
+description: Sample release notes you can replace with your real updates.
 ---
 
-## Recent Updates
-
-Stay current with StarterKit's evolution. You receive new features, performance improvements, and critical fixes in each release. Check the tags on each update to prioritize your migration.
-
-<Update label="2024-10-15" description="v1.2.0" tags={["feature", "improvement"]}>
-
-## New Features
-
-- Added support for custom brand colors via `BRAND_COLOR` environment variable. Set it to `#3B82F6` for Documentation.AI matching.
-- Introduced `<Video>` and `<Iframe>` components for richer media embeds in your docs.
-
-## Improvements
-
-- Enhanced MDX parsing with better escaping for `{` and `}` characters in prose.
-- Optimized build times by 30% with parallel component compilation.
-
-## Bug Fixes
-
-- Fixed nested code block rendering inside `<Steps>` and `<Tabs>`.
-- Resolved heading hierarchy warnings in strict mode.
-
-</Update>
-
-<Update label="2024-09-20" description="v1.1.0" tags={["feature", "bugfix"]}>
-
-## New Features
-
-- New `<Columns>` component for responsive card grids (up to 5 columns).
-- Integrated Lucide icons with auto-completion in your IDE.
-
-## Bug Fixes
-
-- Corrected attribute parsing for arrays like `tags={["feature"]}`.
-- Patched self-closing component errors in JSX validation.
-
-<CodeGroup tabs="Before,After">
-```jsx
-// Before (broken)
-<Card tags=["feature"] />
-
-// After (fixed)
-<Card tags={["feature"]} />
-```
-```jsx
-// Before (broken)
-<Card tags={["feature"]} />
-
-// After (fixed, same)
-<Card tags={["feature"]} />
-```
-</CodeGroup>
-
-</Update>
-
-<Update label="2024-08-10" description="v1.0.0" tags={["breaking", "feature"]}>
-
-## New Features
-
-- Core MDX components: `<Callout>`, `<Steps>`, `<Tabs>`, and `<Update>`.
-- Full parsing rules for escaping `<`, `>`, `{`, `}` in documentation.
-
-## Breaking Changes
-
-- Removed legacy `<Mermaid>` component syntax. Use code blocks only:
-  ```mermaid
-  graph TD
-      A[User] --> B[Docs]
-      B --> C[Parsed MDX]
-  ```
-
-## Migration Notes
-
-Update your config to use double-quoted attributes everywhere.
-
-</Update>
-
-## Breaking Changes Summary
-
-Review these changes before upgrading:
-
-| Version | Change | Impact |
-|---------|--------|--------|
-| v1.2.0 | Custom brand color env var | Low - Optional |
-| v1.1.0 | Array attribute fixes | Medium - Update JSX |
-| v1.0.0 | Mermaid code block only | High - Rewrite diagrams |
+## Sample updates
 
 <Callout kind="alert">
-Always test in a staging environment. Backup your `mdx.config.js` before `npm update`.
+This changelog is example content. Replace every entry with your real releases.
 </Callout>
 
-## Migration Guide
+<Update label="2026-01-26" description="Sample Update" tags={["sample"]}>
+## What changed
+- Cleaned up placeholder copy across the starter kit.
+- Added clearer "sample" messaging to avoid confusion.
+</Update>
 
-Follow these steps to upgrade smoothly.
-
-<Steps>
-  <Step title="Backup" icon="archive">
-    Save your current docs folder.
-
-    ```
-    cp -r docs docs-backup
-    ```
-  </Step>
-  <Step title="Update Package" icon="package">
-    Install the latest version.
-
-    <CodeGroup tabs="npm,yarn">
-    ````bash
-    npm install starterkit@latest
-    ````
-    ````bash
-    yarn add starterkit@latest
-    ````
-    </CodeGroup>
-  </Step>
-  <Step title="Review Config" icon="settings">
-    Check `mdx.config.js` for deprecated props.
-
-    ```javascript
-    // Update to new format
-    module.exports = {
-      brandColor: process.env.BRAND_COLOR || '#3B82F6',
-      escapeSpecial: true, // Now default
-    };
-    ```
-  </Step>
-  <Step title="Test Build" icon="check-circle">
-    Run your build and scan for parsing errors.
-  </Step>
-</Steps>
-
-## Upcoming Roadmap
-
-Explore what's next for StarterKit. These features enhance your documentation experience.
-
-<Columns cols={3}>
-  <Card title="AI Components" icon="bot" href="#">
-    Auto-generate MDX from prompts.
-  </Card>
-  <Card title="Live Preview" icon="eye" href="#">
-    Real-time MDX editing in dashboard.
-  </Card>
-  <Card title="Export Tools" icon="download" href="#">
-    PDF and HTML exporters.
-  </Card>
-</Columns>
-
-<Expandable title="Detailed Roadmap" default-open="false">
-
-- Q4 2024: Full TypeScript support for components.
-- Q1 2025: Integration with `https://api.example.com` for dynamic docs.
-
-</Expandable>
-
-<Callout kind="tip">
-Subscribe to our updates at `https://dashboard.example.com/notifications` for release alerts.
-</Callout>
+<Update label="2025-12-10" description="Sample Update" tags={["sample"]}>
+## What changed
+- Simplified the Quickstart steps.
+- Trimmed Help Center examples.
+</Update>

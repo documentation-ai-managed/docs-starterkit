@@ -1,11 +1,12 @@
 openapi: '3.0.0'
 info:
   version: 1.0.0
-  title: StarterKit API
+  title: Sample API
+  description: Sample OpenAPI file included with the starter kit.
   license:
     name: MIT
 servers:
-  - url: http://petstore.swagger.io/v1
+  - url: https://api.example.com/v1
 paths:
   /projects:
     get:

@@ -1,5 +1,5 @@
 {
-  "name": "StarterKit",
+  "name": "Sample Starter Kit",
   "initialRoute": "introduction",
   "colors": {
     "light": {
@@ -12,36 +12,46 @@
   "navigation": {
     "tabs": [
       {
-        "tab": "Documentation",
+        "tab": "Sample Docs",
         "icon": "book",
         "groups": [
           {
-            "group": "Getting Started",
+            "group": "Start Here",
             "icon": "rocket",
             "pages": [
               {
-                "title": "Introduction",
+                "title": "Sample Overview",
                 "path": "introduction",
                 "icon": "home"
               },
               {
-                "title": "Quickstart",
+                "title": "Sample Notice",
+                "path": "sample-notice",
+                "icon": "alert-triangle"
+              },
+              {
+                "title": "Quickstart (Sample)",
                 "path": "quickstart",
                 "icon": "zap"
+              },
+              {
+                "title": "Components",
+                "path": "components",
+                "icon": "code"
               }
             ]
           },
           {
-            "group": "Core Concepts",
+            "group": "Example Guides",
             "icon": "layers",
             "pages": [
               {
-                "title": "Concepts",
+                "title": "Core Concepts (Sample)",
                 "path": "concepts",
                 "icon": "file-text"
               },
               {
-                "title": "Authentication",
+                "title": "Authentication (Sample)",
                 "path": "authentication",
                 "icon": "lock"
               }
@@ -50,21 +60,21 @@
         ]
       },
       {
-        "tab": "API Reference",
+        "tab": "API Reference (Sample)",
         "icon": "code",
         "groups": [
           {
-            "group": "Endpoints",
+            "group": "Sample Endpoints",
             "openapi": "openapi.yaml"
           }
         ]
       },
       {
-        "tab": "Help Center",
+        "tab": "Help Center (Sample)",
         "icon": "help-circle",
         "pages": [
           {
-            "title": "Help Center",
+            "title": "Help Center (Sample)",
             "path": "help-center",
             "icon": "home"
           },
@@ -74,7 +84,7 @@
             "expandable": false,
             "pages": [
               {
-                "title": "Getting Started FAQ",
+                "title": "Documentation Source",
                 "path": "help-center/faq/getting-started"
               }
             ]
@@ -85,7 +95,7 @@
             "expandable": false,
             "pages": [
               {
-                "title": "Install Error",
+                "title": "Page Missing in Sidebar",
                 "path": "help-center/troubleshooting/install-error"
               }
             ]
@@ -96,7 +106,7 @@
             "expandable": false,
             "pages": [
               {
-                "title": "Setup Project",
+                "title": "Create Your First Page",
                 "path": "help-center/guides/setup-project"
               }
             ]
@@ -104,11 +114,11 @@
         ]
       },
       {
-        "tab": "Changelog",
+        "tab": "Changelog (Sample)",
         "icon": "clock",
         "pages": [
           {
-            "title": "Release History",
+            "title": "Sample Changelog",
             "path": "changelog",
             "icon": "history"
           }

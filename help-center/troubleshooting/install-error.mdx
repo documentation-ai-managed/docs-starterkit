@@ -1,29 +1,28 @@
 ---
-title: Install Error: Module Not Found
-description: Resolve module not found install error in StarterKit.
+title: Page Missing in Sidebar
+description: Fix a page that does not appear in navigation.
 ---
 
 ## Symptoms
 
-- Error: `Cannot find module '@documentation-ai/starterkit'`
-- Build fails after install
+- A new page file exists but does not show up in the sidebar.
+- Clicking a nav item shows a 404.
 
-## Causes
+## Likely causes
 
-- Incorrect package name
-- Missing `node_modules` folder
+- The page path is missing in `documentation.json`.
+- The path does not match the `.mdx` filename.
 
-## Solution
+## Fix
 
 <Steps>
-  <Step title="Check package name">
-    ````bash
-    npm install @documentation-ai/starterkit
-    ````
+  <Step title="Confirm the file name" icon="file-text">
+    Ensure the file exists (example: `my-page.mdx`).
   </Step>
-  <Step title="Reinstall dependencies">
-    ````bash
-    rm -rf node_modules && npm install
-    ````
+  <Step title="Update navigation" icon="settings">
+    Add or fix the matching `path` in `documentation.json`.
+  </Step>
+  <Step title="Refresh preview" icon="refresh-cw">
+    Reload your preview so changes take effect.
   </Step>
 </Steps>

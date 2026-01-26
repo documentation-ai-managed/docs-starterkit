@@ -1,177 +1,54 @@
 ---
-title: Authentication and Permissions
-description: Learn how to authenticate with Documentation.AI and manage permissions for secure access in your StarterKit projects.
+title: Authentication (Sample)
+description: Placeholder layout you can replace with your real authentication guide.
 ---
 
 ## Overview
 
-Secure your StarterKit projects with Documentation.AI by using API keys or OAuth. API keys suit server-side integrations, while OAuth enables user-based access. Permissions follow role-based access control (RBAC) to restrict actions like read, write, or admin.
-
-<Callout kind="info">
-
-Before starting, create a Documentation.AI account at `https://dashboard.example.com` and generate credentials.
-
+<Callout kind="alert">
+This page is a sample layout. Replace every credential, header, and flow with your real authentication guidance.
 </Callout>
 
-## Authentication Methods
-
-Choose the method that fits your use case.
+## Choose your auth model
 
 <Tabs>
-  <Tab title="API Keys" icon="key">
-
-    Generate API keys from your dashboard.
+  <Tab title="Token" icon="key">
+    Use this tab if your product uses static tokens or API keys.
 
     <Steps>
-      <Step title="Create Key" icon="plus">
-        Navigate to `https://dashboard.example.com/account/api-keys`.
-        
-        Click **Generate New Key**.
+      <Step title="Create a token" icon="plus">
+        Explain where users generate or receive credentials.
       </Step>
-      <Step title="Copy Key" icon="copy">
-        Copy the generated key securely.
-      </Step>
-      <Step title="Use in StarterKit" icon="code">
-        Set the key as an environment variable.
+      <Step title="Send the header" icon="code">
+        Show the simplest request that works.
       </Step>
     </Steps>
 
-    <CodeGroup tabs="Node.js,Python">
-      ````javascript
-      import { StarterKit } from '@documentation-ai/starterkit';
-
-      const client = new StarterKit({
-        apiKey: process.env.STARTERKIT_API_KEY
-      });
-
-      const docs = await client.docs.list();
-      console.log(docs);
-      ````
-
-      ````python
-      from starterkit import StarterKit
-
-      client = StarterKit(api_key="YOUR_API_KEY")
-
-      docs = client.docs.list()
-      print(docs)
-      ````
-    </CodeGroup>
+    ```bash
+    curl https://api.yourcompany.com/v1/example \
+      -H "Authorization: Bearer YOUR_TOKEN"
+    ```
 
     <ParamField header="Authorization" param-type="string" required="true">
-      Bearer token format: `Bearer YOUR_API_KEY`.
+      `Bearer YOUR_TOKEN`
     </ParamField>
-
   </Tab>
-  <Tab title="OAuth 2.0" icon="shield">
-
-    Implement OAuth for client-side apps.
+  <Tab title="Session" icon="shield">
+    Use this tab if your product authenticates with a login session.
 
     <Steps>
-      <Step title="Register App" icon="settings">
-        In dashboard, register your app at `https://dashboard.example.com/apps`.
-        
-        Note the `client_id` and `client_secret`.
+      <Step title="Sign in" icon="user">
+        Describe the login page or SSO flow.
       </Step>
-      <Step title="Redirect User" icon="external-link">
-        Direct users to `https://auth.example.com/oauth/authorize?client_id=YOUR_CLIENT_ID&redirect_uri=YOUR_URI&response_type=code`.
-      </Step>
-      <Step title="Exchange Code" icon="arrow-right">
-        Exchange authorization code for tokens.
+      <Step title="Confirm access" icon="check-circle">
+        Explain how users verify they are authenticated.
       </Step>
     </Steps>
-
-    <CodeGroup tabs="Node.js,cURL">
-      ````javascript
-      const response = await fetch('https://auth.example.com/oauth/token', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-        body: new URLSearchParams({
-          grant_type: 'authorization_code',
-          client_id: 'YOUR_CLIENT_ID',
-          client_secret: 'YOUR_CLIENT_SECRET',
-          code: 'AUTH_CODE',
-          redirect_uri: 'YOUR_URI'
-        })
-      });
-
-      const { access_token } = await response.json();
-      ````
-
-      ````bash
-      curl -X POST https://auth.example.com/oauth/token \
-        -H "Content-Type: application/x-www-form-urlencoded" \
-        -d "grant_type=authorization_code&client_id=YOUR_CLIENT_ID&client_secret=YOUR_CLIENT_SECRET&code=AUTH_CODE&redirect_uri=YOUR_URI"
-      ````
-    </CodeGroup>
-
   </Tab>
 </Tabs>
 
-## Role-Based Permissions
+## Common mistakes (sample)
 
-StarterKit uses RBAC with these predefined roles:
-
-| Role     | Read | Write | Admin | Description                  |
-|----------|------|-------|-------|------------------------------|
-| Viewer   | ✅   | ❌    | ❌    | Read documents only         |
-| Editor   | ✅   | ✅    | ❌    | Edit and read documents     |
-| Admin    | ✅   | ✅    | ✅    | Full access, manage users   |
-
-Assign roles via dashboard or API:
-
-<ParamField path="userId" param-type="string" required="true">
-  Target user ID.
-</ParamField>
-
-<ParamField body="role" param-type="string" required="true">
-  Role name: `viewer`, `editor`, or `admin`.
-</ParamField>
-
-## Security Best Practices
-
-<Callout kind="alert">
-
-Never expose API keys in client-side code. Rotate keys regularly and use least-privilege roles. Monitor usage at `https://dashboard.example.com/usage`.
-
-</Callout>
-
-## Troubleshooting
-
-<ExpandableGroup>
-  <Expandable title="Invalid API Key" default-open="true">
-
-    **Error:** `401 Unauthorized`
-
-    Check:
-    - Key copied correctly (no extra spaces).
-    - Environment variable set: `echo $STARTERKIT_API_KEY`.
-    - Key not revoked in dashboard.
-
-    Test with cURL:
-
-    ````bash
-    curl -H "Authorization: Bearer YOUR_API_KEY" https://api.example.com/starterkit/docs
-    ````
-
-  </Expandable>
-  <Expandable title="OAuth Redirect URI Mismatch">
-
-    Ensure your `redirect_uri` matches exactly what's registered. Use `http://localhost:3000/callback` for development.
-
-  </Expandable>
-  <Expandable title="Permission Denied">
-
-    Verify user role allows the action. Upgrade to `admin` for testing, then downgrade.
-
-  </Expandable>
-</ExpandableGroup>
-
-<Columns cols={2}>
-  <Card title="Quickstart" icon="rocket" href="/quickstart">
-    Set up your first project.
-  </Card>
-  <Card title="API Reference" icon="book-open" href="/introduction">
-    Full endpoint details.
-  </Card>
-</Columns>
+<Expandable title="Why am I getting a 401?" default-open="false">
+Double-check that the token is valid, not expired, and sent in the correct header.
+</Expandable>
