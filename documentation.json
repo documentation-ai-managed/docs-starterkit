@@ -37,6 +37,17 @@
             ]
           },
           {
+            "group": "Sample Notice",
+            "icon": "alert-triangle",
+            "pages": [
+              {
+                "title": "Sample Notice",
+                "path": "sample-notice",
+                "icon": "alert-triangle"
+              }
+            ]
+          },
+          {
             "group": "Components",
             "icon": "layers",
             "pages": [
@@ -67,17 +78,7 @@
               }
             ]
           },
-          {
-            "group": "Sample Notice",
-            "icon": "alert-triangle",
-            "pages": [
-              {
-                "title": "Sample Notice",
-                "path": "sample-notice",
-                "icon": "alert-triangle"
-              }
-            ]
-          },
+         
           {
             "group": "Example Guides",
             "icon": "layers",

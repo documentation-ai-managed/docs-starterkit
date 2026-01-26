@@ -7,10 +7,32 @@ description: Organize variants like languages or platforms.
 
 Tabs group related variants like language or platform.
 
-## When to use
+## Example
 
-Use tabs to avoid repeating the same text across platforms.
+<Tabs>
+  <Tab title="macOS" icon="apple">
+    Install using Homebrew for the best experience on macOS.
 
-## Labeling
+    ```bash
+    brew install documentation-ai
+    ```
+  </Tab>
+  <Tab title="Windows" icon="monitor">
+    Download and run the Windows installer from the releases page.
 
-Keep labels short and consistent across sections.
+    ```bash
+    winget install documentation-ai
+    ```
+  </Tab>
+  <Tab title="Linux" icon="terminal">
+    Use your package manager or download the binary directly.
+
+    ```bash
+    sudo apt install documentation-ai
+    ```
+  </Tab>
+</Tabs>
+
+## Learn more
+
+Read the full Tabs guide at https://documentation.ai/docs/components/tabs.
