@@ -1,0 +1,251 @@
+---
+title: Quickstart
+description: Set up the docs repo locally, edit your first page, add a new page, and register it in documentation.json.
+---
+
+## Overview
+
+This quickstart walks you through:
+
+- Running the documentation site locally
+- Editing the existing `introduction.mdx` page
+- Adding a new page file
+- Registering the new page in `documentation.json`
+- Optionally wiring API Reference routes from `openapi.yaml`
+
+If you are new, you may also want to read the [Introduction](/introduction).
+
+## Prerequisites
+
+Before you start, make sure you have:
+
+- Node.js and npm or yarn installed
+- Git installed
+- Access to this docs repository on your machine
+
+If your project provides a specific Node.js version or package manager in its README, prefer those versions.
+
+<Callout kind="info">
+
+All paths and filenames in this quickstart assume you are in the root of the docs repository that contains:
+
+- `introduction.mdx`
+- `quickstart.mdx`
+- `documentation.json`
+- `openapi.yaml`
+
+</Callout>
+
+## Run the docs locally
+
+Use your package manager to install dependencies and start the local dev server.
+
+<Steps>
+  <Step title="Install dependencies">
+
+Run the following from the repository root:
+
+```bash
+npm install
+# or
+yarn install
+```
+
+  </Step>
+  <Step title="Start the dev server">
+
+Then start the documentation server:
+
+```bash
+npm run dev
+# or
+yarn dev
+```
+
+Open the printed local URL in your browser. You should see the documentation with a **Documentation** tab containing **Getting Started** with **Introduction** and **Quickstart**.
+
+  </Step>
+</Steps>
+
+## Edit the introduction page
+
+Next, make a small change to confirm that local edits are reflected in the browser.
+
+<Steps>
+  <Step title="Open introduction.mdx">
+
+From the repo root, open the file:
+
+```bash
+code introduction.mdx
+# or use your preferred editor
+```
+
+  </Step>
+  <Step title="Make a visible change">
+
+Add or change a line in the body, for example:
+
+```mdx
+## Welcome
+
+This is a local edit to the Introduction page.
+```
+
+Save the file and check the browser. Hot reload should apply your change immediately.
+
+  </Step>
+</Steps>
+
+## Add a new page file
+
+Now add a completely new page and wire it into the navigation.
+
+In this example, you will create a page called `My First Page`.
+
+<Steps>
+  <Step title="Create the MDX file">
+
+From the repository root, create a new file named `my-first-page.mdx`:
+
+```bash
+touch my-first-page.mdx
+```
+
+Open `my-first-page.mdx` and add minimal frontmatter and content:
+
+```mdx
+---
+title: My First Page
+description: Example page added in the quickstart.
+---
+
+## My first page
+
+This is a new page created during the quickstart.
+
+You can add headings, text, and code blocks here as needed.
+```
+
+  </Step>
+</Steps>
+
+## Register the page in documentation.json
+
+The site navigation is defined in `documentation.json`. To make your new page appear in the **Documentation** tab, add an entry that points to the new file.
+
+<Steps>
+  <Step title="Open documentation.json">
+
+From the repo root, open:
+
+```bash
+code documentation.json
+```
+
+Locate the **Documentation** tab and the `Getting Started` group. It contains existing pages such as `introduction` and `quickstart`.
+
+  </Step>
+  <Step title="Add a page entry">
+
+Inside the `Getting Started` group, add a new page object for `My First Page`. For example:
+
+```json
+{
+  "tab": "Documentation",
+  "icon": "book",
+  "groups": [
+    {
+      "group": "Getting Started",
+      "icon": "rocket",
+      "pages": [
+        {
+          "title": "Introduction",
+          "path": "introduction",
+          "icon": "home"
+        },
+        {
+          "title": "Quickstart",
+          "path": "quickstart",
+          "icon": "zap"
+        },
+        {
+          "title": "My First Page",
+          "path": "my-first-page",
+          "icon": "file-text"
+        }
+      ]
+    }
+  ]
+}
+```
+
+Adjust indentation to match your existing file. The important fields are:
+
+- `"title"`: Label shown in the sidebar.
+- `"path"`: Base filename of your MDX file, without extension.
+- `"icon"`: An icon name used by your navigation (for example `file-text`).
+
+Save `documentation.json`, then reload the browser. You should now see **My First Page** in the **Getting Started** section.
+
+  </Step>
+</Steps>
+
+<Callout kind="tip">
+
+You can reuse existing icon names from other entries in `documentation.json` if you are unsure which icon to pick.
+
+</Callout>
+
+## Optional: Connect API Reference from openapi.yaml
+
+The **API Reference** tab in navigation uses the `openapi.yaml` file to generate endpoint docs.
+
+If you need to update API Reference:
+
+<Steps>
+  <Step title="Open the OpenAPI file">
+
+From the repo root, open:
+
+```bash
+code openapi.yaml
+```
+
+You should see a standard OpenAPI document with paths and components.
+
+  </Step>
+  <Step title="Add or update an endpoint">
+
+Follow your API team guidelines when editing OpenAPI. A very simple path entry might look like:
+
+```yaml
+paths:
+  /health:
+    get:
+      summary: Health check
+      responses:
+        "200":
+          description: Service is healthy
+```
+
+After saving changes, restart the dev server if needed so your API Reference reflects the updated `openapi.yaml`.
+
+  </Step>
+</Steps>
+
+## Next steps
+
+You have now:
+
+- Run the docs site locally
+- Edited an existing page
+- Added a new page file
+- Registered it in `documentation.json`
+- Learned where API Reference comes from via `openapi.yaml`
+
+From here, you can:
+
+- Refine the content of your [Introduction](/introduction)
+- Organize more topics under new groups in `documentation.json`
+- Expand the API Reference by enriching `openapi.yaml`
