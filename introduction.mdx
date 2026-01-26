@@ -1,29 +1,25 @@
 ---
-title: Sample Starter Kit
-description: A minimal, editable starting point for your own documentation.
+title: Documentation.AI's Starter Kit
+description: 'A minimal, editable starting point for your own documentation.'
 ---
-
 ## Start here
 
-<Card
-  title="Sample content notice"
-  icon="alert-triangle"
-  horizontal={true}
->
+<Card title="Sample content notice" icon="alert-triangle" horizontal="true">
   This is sample content shipped with the starter kit. Replace text, links, and examples with your own documentation to avoid confusion.
 </Card>
 
-
 ## What you get
 
-<Columns cols={3}>
-  <Card title="Docs structure" icon="book-open" href="/quickstart">
+<Columns cols="3">
+  <Card title="Docs structure" href="/quickstart" icon="book-open" horizontal="false">
     A clear navigation layout with starter pages you can rename or replace.
   </Card>
-  <Card title="MDX components" icon="layout-grid" href="#try-a-few-components">
+
+  <Card title="MDX components" href="#try-a-few-components" icon="layout-grid" horizontal="false">
     Prebuilt blocks like Callouts, Steps, Tabs, and Cards to keep pages clean.
   </Card>
-  <Card title="API reference hook" icon="code" href="/authentication">
+
+  <Card title="API reference hook" href="/authentication" icon="code" horizontal="false">
     A placeholder `openapi.yaml` you can swap with your real API spec.
   </Card>
 </Columns>
@@ -31,20 +27,25 @@ description: A minimal, editable starting point for your own documentation.
 ## Where content comes from
 
 - Pages live in `.mdx` files (like this one).
+
 - Navigation is defined in `documentation.json`.
+
 - API Reference is generated from `openapi.yaml` when you choose to use it.
+
 - Read the [Sample Notice](/sample-notice) before sharing this site.
 
 ## Make your first edit
 
 <Steps>
-  <Step title="Rewrite this page" icon="edit">
+  <Step title="Rewrite this page" icon="edit" title-type="p">
     Update the title, description, and sections in `introduction.mdx`.
   </Step>
-  <Step title="Customize Quickstart" icon="zap">
+
+  <Step title="Customize Quickstart" icon="zap" title-type="p">
     Replace the steps in `quickstart.mdx` with your real onboarding flow.
   </Step>
-  <Step title="Add your first page" icon="file-text">
+
+  <Step title="Add your first page" icon="file-text" title-type="p">
     Create a new `.mdx` file and register it in `documentation.json`.
   </Step>
 </Steps>
@@ -52,25 +53,30 @@ description: A minimal, editable starting point for your own documentation.
 ## Try a few components
 
 <Expandable title="Why components matter" default-open="false">
-Components like `<Callout>`, `<Steps>`, `<Tabs>`, and `<Columns>` keep content readable and consistent. Use them to highlight important info and guide readers.
+  Components like `<Callout>`, `<Steps>`, `<Tabs>`, and `<Columns>` keep content readable and consistent. Use them to highlight important info and guide readers.
 </Expandable>
 
 ## Continue to the rest of the sample
 
-<Columns cols={2}>
-  <Card title="Quickstart" icon="zap" href="/quickstart">
+<Columns cols="2">
+  <Card title="Quickstart" href="/quickstart" icon="zap" horizontal="false">
     See the minimal setup flow.
   </Card>
-  <Card title="Core Concepts" icon="layers" href="/concepts">
+
+  <Card title="Core Concepts" href="/concepts" icon="layers" horizontal="false">
     Learn how pages, navigation, and components fit together.
   </Card>
-  <Card title="Components" icon="code" href="/components">
+
+  <Card title="Components" href="/components" icon="code" horizontal="false">
     A small gallery of built-in components.
   </Card>
-  <Card title="Authentication" icon="lock" href="/authentication">
+
+  <Card title="Authentication" href="/authentication" icon="lock" horizontal="false">
     Example layout for an auth guide.
   </Card>
-  <Card title="Help Center" icon="help-circle" href="/help-center">
+
+  <Card title="Help Center" href="/help-center" icon="help-circle" horizontal="false">
     Starter FAQ, guides, and troubleshooting templates.
   </Card>
 </Columns>
+

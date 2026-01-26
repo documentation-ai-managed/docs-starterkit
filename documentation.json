@@ -20,7 +20,7 @@
             "icon": "rocket",
             "pages": [
               {
-                "title": "Sample Overview",
+                "title": "Overview",
                 "path": "introduction",
                 "icon": "home"
               },
@@ -37,12 +37,12 @@
             ]
           },
           {
-            "group": "Sample Notice",
+            "group": "Notice",
             "icon": "alert-triangle",
             "pages": [
               {
-                "title": "Sample Notice",
-                "path": "sample-notice",
+                "title": "Notice",
+                "path": "notice",
                 "icon": "alert-triangle"
               }
             ]
@@ -83,7 +83,6 @@
               }
             ]
           },
-         
           {
             "group": "Example Guides",
             "icon": "layers",
@@ -98,7 +97,7 @@
         ]
       },
       {
-        "tab": "API Reference (Sample)",
+        "tab": "API Reference",
         "icon": "code",
         "groups": [
           {
@@ -119,7 +118,7 @@
         ]
       },
       {
-        "tab": "Help Center (Sample)",
+        "tab": "Help Center",
         "icon": "help-circle",
         "pages": [
           {
@@ -163,11 +162,11 @@
         ]
       },
       {
-        "tab": "Changelog (Sample)",
+        "tab": "Changelog",
         "icon": "clock",
         "pages": [
           {
-            "title": "Sample Changelog",
+            "title": "Changelog",
             "path": "changelog",
             "icon": "history"
           }

@@ -1,27 +1,29 @@
 ---
-title: Sample Notice
+title: Notice
 description: Clear guidance that this site is a starter template.
 ---
-
 ## This is a sample
 
-<Callout kind="alert">
-Everything in this site is starter content. Replace it with your real documentation before sharing with customers.
+<Callout kind="alert" collapsed="false">
+  Everything in this site is starter content. Replace it with your real documentation before sharing with customers.
 </Callout>
 
 ## What is safe to change
 
-<Columns cols={2}>
-  <Card title="Page content" icon="file-text">
+<Columns cols="2">
+  <Card title="Page content" icon="file-text" horizontal="false">
     Edit any `.mdx` file in this repo.
   </Card>
-  <Card title="Navigation" icon="list">
+
+  <Card title="Navigation" icon="list" horizontal="false">
     Update labels and order in `documentation.json`.
   </Card>
-  <Card title="API Reference" icon="code">
+
+  <Card title="API Reference" icon="code" horizontal="false">
     Swap `openapi.yaml` with your own spec or remove the tab.
   </Card>
-  <Card title="Help Center" icon="help-circle">
+
+  <Card title="Help Center" icon="help-circle" horizontal="false">
     Replace FAQs, guides, and troubleshooting with your real support content.
   </Card>
 </Columns>
@@ -29,13 +31,16 @@ Everything in this site is starter content. Replace it with your real documentat
 ## Recommended first changes
 
 <Steps>
-  <Step title="Rename pages" icon="edit">
+  <Step title="Rename pages" icon="edit" title-type="p">
     Update page titles and descriptions to match your product.
   </Step>
-  <Step title="Replace sample links" icon="link">
+
+  <Step title="Replace sample links" icon="link" title-type="p">
     Remove any placeholder URLs and add your own.
   </Step>
-  <Step title="Remove unused sections" icon="trash">
+
+  <Step title="Remove unused sections" icon="trash" title-type="p">
     Delete any pages you do not plan to maintain.
   </Step>
 </Steps>
+
