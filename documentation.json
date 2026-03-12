@@ -151,11 +151,5 @@
       }
     ]
   },
-  "initialRoute": "authentication",
-  "redirects": [
-    {
-      "source": "/introduction",
-      "destination": "/quickstart"
-    }
-  ]
+  "initialRoute": "authentication"
 }
