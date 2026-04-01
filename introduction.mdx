@@ -2,9 +2,32 @@
 title: Set Up Your Documentation
 description: 'A minimal, editable starting point for your own documentation site.'
 ---
-<Script src="https://www.guidejar.com/iframeResizer.min.js" type="text/javascript" />
-
-<Iframe uid="365434c7-3e09-477b-bf98-c2b12a94ec0e" src="https://www.guidejar.com/embed/cf2fafbb-ed89-40fb-9958-ef8c0d024c04?theme=light&type=0&height=guide" title="Embedded content" height="400" allow-full-screen="true" frame-border="0" loading="lazy" iframe-id="guidejar-embed-cf2fafbb-ed89-40fb-9958-ef8c0d024c04" display-mode="auto-resize" />
-
-<Script code="aUZyYW1lUmVzaXplKHtsb2c6IGZhbHNlLCBjaGVja09yaWdpbjogZmFsc2UsIGhlaWdodENhbGN1bGF0aW9uTWV0aG9kOiAidGFnZ2VkRWxlbWVudCJ9LCAiI2d1aWRlamFyLWVtYmVkLWNmMmZhZmJiLWVkODktNDBmYi05OTU4LWVmOGMwZDAyNGMwNCIpOw==" type="text/javascript" />
-
+<div className="w-full flex flex-col">
+      <div className="flex flex-col items-start justify-center w-full max-w-4xl text-left">
+        <div className="text-gray-900 dark:text-gray-200 text-4xl tracking-tight">
+          Aspen Documentation
+        </div>
+        <p className="text-md text-gray-600 dark:text-gray-400 text-left mt-3 mb-4">
+          Explore our API & SDK references, demos, and guides for building intelligent applications.
+        </p>
+        <div className="flex flex-row gap-4 mt-5">
+          <a href="/get-started/quickstart">
+            <button
+              type="button"
+              className="px-5 flex items-center font-medium text-sm rounded-full py-2 shadow-sm text-white dark:text-gray-900 bg-primary-dark dark:bg-primary-light hover:opacity-[0.9] hover:bg-primary justify-center"
+            >
+              Get started
+              <svg
+                className="size-3 ml-2 bg-white dark:bg-gray-900"
+                style={{
+                  maskImage:
+                    'url("https://mintlify.b-cdn.net/solid/arrow-right-long.svg")',
+                  maskRepeat: 'no-repeat',
+                  maskPosition: 'center center'
+                }}
+              />
+            </button>
+          </a>
+        </div>
+      </div>
+    </div>
