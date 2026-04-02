@@ -1,5 +1,6 @@
 {
   "name": "Starter Kit",
+  "initialRoute": "introduction",
   "colors": {
     "light": {
       "brand": "#F97316"
@@ -26,18 +27,21 @@
               {
                 "title": "Quickstart",
                 "path": "quickstart",
-                "icon": "zap"
+                "icon": "zap",
+                "access-roles": ["developer"]
               },
               {
                 "title": "Components",
                 "path": "components",
-                "icon": "code"
+                "icon": "code",
+                "access-roles": ["developer", "viewer"]
               }
             ]
           },
           {
             "group": "Components",
             "icon": "layers",
+            "access-roles": ["developer"],
             "pages": [
               {
                 "title": "Images",
@@ -52,7 +56,8 @@
               {
                 "title": "Code",
                 "path": "components/code",
-                "icon": "code"
+                "icon": "code",
+                "access-roles": ["admin"]
               },
               {
                 "title": "Callouts",
@@ -62,7 +67,8 @@
               {
                 "title": "Steps",
                 "path": "components/steps",
-                "icon": "list-ordered"
+                "icon": "list-ordered",
+                "access-roles": ["developer", "viewer"]
               },
               {
                 "title": "Tabs",
@@ -76,6 +82,7 @@
       {
         "tab": "API Reference",
         "icon": "code",
+        "access-roles": ["developer", "admin"],
         "groups": [
           {
             "group": "Overview",
@@ -97,6 +104,7 @@
       {
         "tab": "Help Center",
         "icon": "help-circle",
+        "access-roles": ["support", "admin"],
         "pages": [
           {
             "title": "Help Center",
@@ -118,6 +126,7 @@
             "group": "Troubleshooting",
             "icon": "alert-triangle",
             "expandable": false,
+            "access-roles": ["admin"],
             "pages": [
               {
                 "title": "Page Missing in Sidebar",
@@ -132,7 +141,8 @@
             "pages": [
               {
                 "title": "Create Your First Page",
-                "path": "help-center/guides/setup-project"
+                "path": "help-center/guides/setup-project",
+                "access-roles": ["support"]
               }
             ]
           }
@@ -141,6 +151,7 @@
       {
         "tab": "Changelog",
         "icon": "clock",
+        "access-roles": ["admin"],
         "pages": [
           {
             "title": "Changelog",
@@ -150,6 +161,5 @@
         ]
       }
     ]
-  },
-  "initialRoute": "authentication"
+  }
 }
