@@ -12,77 +12,12 @@
   "navigation": {
     "tabs": [
       {
-        "tab": "Documentation",
-        "icon": "book",
-        "groups": [
-          {
-            "group": "Start Here",
-            "icon": "rocket",
-            "pages": [
-              {
-                "title": "Introduction",
-                "path": "introduction",
-                "icon": "home"
-              },
-              {
-                "title": "Quickstart",
-                "path": "quickstart",
-                "icon": "zap",
-                "access-roles": ["developer"]
-              },
-              {
-                "title": "Components",
-                "path": "components",
-                "icon": "code",
-                "access-roles": ["developer", "viewer"]
-              }
-            ]
-          },
-          {
-            "group": "Components",
-            "icon": "layers",
-            "access-roles": ["developer"],
-            "pages": [
-              {
-                "title": "Images",
-                "path": "components/images",
-                "icon": "image"
-              },
-              {
-                "title": "Cards",
-                "path": "components/cards",
-                "icon": "square"
-              },
-              {
-                "title": "Code",
-                "path": "components/code",
-                "icon": "code",
-                "access-roles": ["admin"]
-              },
-              {
-                "title": "Callouts",
-                "path": "components/callouts",
-                "icon": "message-square"
-              },
-              {
-                "title": "Steps",
-                "path": "components/steps",
-                "icon": "list-ordered",
-                "access-roles": ["developer", "viewer"]
-              },
-              {
-                "title": "Tabs",
-                "path": "components/tabs",
-                "icon": "columns"
-              }
-            ]
-          }
-        ]
-      },
-      {
         "tab": "API Reference",
         "icon": "code",
-        "access-roles": ["developer", "admin"],
+        "access-roles": [
+          "developer",
+          "admin"
+        ],
         "groups": [
           {
             "group": "Overview",
@@ -102,9 +37,92 @@
         ]
       },
       {
+        "tab": "Documentation",
+        "icon": "book",
+        "groups": [
+          {
+            "group": "Start Here",
+            "icon": "rocket",
+            "pages": [
+              {
+                "title": "Introduction",
+                "path": "introduction",
+                "icon": "home"
+              },
+              {
+                "title": "Quickstart",
+                "path": "quickstart",
+                "icon": "zap",
+                "access-roles": [
+                  "developer"
+                ]
+              },
+              {
+                "title": "Components",
+                "path": "components",
+                "icon": "code",
+                "access-roles": [
+                  "developer",
+                  "viewer"
+                ]
+              }
+            ]
+          },
+          {
+            "group": "Components",
+            "icon": "layers",
+            "access-roles": [
+              "developer"
+            ],
+            "pages": [
+              {
+                "title": "Images",
+                "path": "components/images",
+                "icon": "image"
+              },
+              {
+                "title": "Cards",
+                "path": "components/cards",
+                "icon": "square"
+              },
+              {
+                "title": "Code",
+                "path": "components/code",
+                "icon": "code",
+                "access-roles": [
+                  "admin"
+                ]
+              },
+              {
+                "title": "Callouts",
+                "path": "components/callouts",
+                "icon": "message-square"
+              },
+              {
+                "title": "Steps",
+                "path": "components/steps",
+                "icon": "list-ordered",
+                "access-roles": [
+                  "developer",
+                  "viewer"
+                ]
+              },
+              {
+                "title": "Tabs",
+                "path": "components/tabs",
+                "icon": "columns"
+              }
+            ]
+          }
+        ]
+      },
+      {
         "tab": "Help Center",
         "icon": "help-circle",
-        "access-roles": ["support", "admin"],
+        "access-roles": [
+          "support",
+          "admin"
+        ],
         "pages": [
           {
             "title": "Help Center",
@@ -126,7 +144,9 @@
             "group": "Troubleshooting",
             "icon": "alert-triangle",
             "expandable": false,
-            "access-roles": ["admin"],
+            "access-roles": [
+              "admin"
+            ],
             "pages": [
               {
                 "title": "Page Missing in Sidebar",
@@ -142,7 +162,9 @@
               {
                 "title": "Create Your First Page",
                 "path": "help-center/guides/setup-project",
-                "access-roles": ["support"]
+                "access-roles": [
+                  "support"
+                ]
               }
             ]
           }
@@ -151,7 +173,9 @@
       {
         "tab": "Changelog",
         "icon": "clock",
-        "access-roles": ["admin"],
+        "access-roles": [
+          "admin"
+        ],
         "pages": [
           {
             "title": "Changelog",
