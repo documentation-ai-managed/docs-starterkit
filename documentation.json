@@ -32,7 +32,8 @@
           },
           {
             "group": "Sample Endpoints",
-            "openapi": "openapi.yaml"
+            "openapi": "openapi.yaml",
+            "icon": "activity-icon"
           }
         ]
       },
