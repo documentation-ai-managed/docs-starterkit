@@ -191,5 +191,19 @@
     {
       "src": "scripts/ga.js"
     }
-  ]
+  ],
+  "navbar": {
+    "actions": {
+      "links": [
+        {
+          "title": "login",
+          "link": "https://dashboard.documentation.ai/editor?tab=settings&section=navigation"
+        },
+        {
+          "title": "this is a long text for texting the length of the button inctercepts the search bar",
+          "link": "https://dashboard.documentation.ai/editor?tab=settings&section=navigation"
+        }
+      ]
+    }
+  }
 }
