@@ -67,7 +67,8 @@
                   "viewer"
                 ]
               }
-            ]
+            ],
+            "path": "start-here"
           },
           {
             "group": "Components",
