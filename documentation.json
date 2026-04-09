@@ -194,6 +194,10 @@
   ],
   "navbar": {
     "actions": {
+      "primary": {
+        "title": "Get Started",
+        "link": ""
+      },
       "links": [
         {
           "title": "login",
