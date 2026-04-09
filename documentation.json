@@ -195,12 +195,12 @@
   "navbar": {
     "actions": {
       "primary": {
-        "title": "Get Started",
+        "title": "Get Started with documentation.ai",
         "link": ""
       },
       "links": [
         {
-          "title": "login",
+          "title": "login in to dashboard",
           "link": "https://dashboard.documentation.ai/editor?tab=settings&section=navigation"
         },
         {
