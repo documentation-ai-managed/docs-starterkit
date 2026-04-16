@@ -209,5 +209,9 @@
         }
       ]
     }
+  },
+  "ai": {
+    "ai-assistant:mode": "floating",
+    "ai-assistant:position": "bottom-spaced"
   }
 }
