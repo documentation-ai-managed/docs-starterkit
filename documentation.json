@@ -47,7 +47,8 @@
               {
                 "title": "Introduction",
                 "path": "introduction",
-                "icon": "home"
+                "icon": "home",
+                "public": true
               },
               {
                 "title": "Quickstart",
