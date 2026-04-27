@@ -214,5 +214,6 @@
   "ai": {
     "ai-assistant:mode": "floating",
     "ai-assistant:position": "default"
-  }
+  },
+  "initialRoute": "introduction"
 }
