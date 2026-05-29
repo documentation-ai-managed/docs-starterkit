@@ -65,7 +65,11 @@
                 "access-roles": [
                   "developer",
                   "viewer"
-                ]
+                ],
+                "show-sidebar": false,
+                "show-toc": false,
+                "show-page-navigation": false,
+                "content-width": "wide"
               }
             ],
             "path": "start-here"
